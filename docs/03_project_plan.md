@@ -43,7 +43,7 @@ Interview questions:
 5. Teachers try searching on their phones; collect feedback and adjust the columns.
 6. Estimate the total effort from the measurements and confirm the scope with the client.
 
-**The purpose is to reduce risk:** fixing a format problem at 20 books costs far less than at 1,000.
+**The purpose is to reduce risk:** fixing a format problem at 20 books costs far less than at 300.
 
 ### Phase 2: Full cataloguing
 

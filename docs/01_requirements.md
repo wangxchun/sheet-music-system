@@ -13,7 +13,7 @@ The studio's top priority is being able to find pieces. This is a **cataloguing 
 ## 2. Current situation
 
 - Four teachers (the owner plus three teachers) share the teaching materials.
-- There are about 1,000 materials, mostly on paper, with a few PDFs.
+- There are about 300 materials, mostly on paper, with a few PDFs.
 - There is no index at the level of individual pieces. To find a piece, a teacher has to remember which book it is in and then search the shelves, which takes several minutes each time.
 
 ## 3. Requirements breakdown
