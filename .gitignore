@@ -1,0 +1,23 @@
+# Secrets: API keys and Google credentials never go to git
+.env
+.env.*
+!.env.example
+secrets/*
+!secrets/README.md
+
+# Client material: score photos and extraction results
+input/toc_photos/*
+!input/toc_photos/README.md
+output/*
+!output/README.md
+
+# Generated template: rebuild with `python3 tools/build_template.py`
+system/鋼琴教材目錄.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store

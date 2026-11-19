@@ -1,0 +1,7 @@
+# build_template.py
+openpyxl>=3.0
+# extract_toc.py (Python 3.10+)
+anthropic>=1.0
+# setup_google_sheet.py (Python 3.10+)
+google-api-python-client>=2.0
+google-auth-oauthlib>=1.0
