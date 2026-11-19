@@ -1,9 +1,9 @@
-# 目錄頁照片
+# Contents-page photos
 
-將待擷取的目錄頁照片或 PDF 放在這個資料夾。
+Put the contents-page photos or PDFs to extract in this folder.
 
-- 一張照片 = 一本書，例如 `B0001_布爾格繆勒25首.jpg`
-- 一個資料夾 = 一本書，資料夾內的多頁依檔名順序處理，例如 `B0003_克萊曼蒂小奏鳴曲/01.jpg`
-- 支援 JPG、PNG、WEBP、PDF
+- One photo = one book, for example `B0001_burgmuller_25_etudes.jpg`
+- One folder = one book; its pages are processed in file-name order, for example `B0003_clementi_sonatinas/01.jpg`
+- JPG, PNG, WEBP and PDF are supported
 
-拍攝要點見 `docs/05_建檔作業流程.md` 第 2 節。
+Photo tips are in section 2 of `docs/05_cataloguing_workflow.md`.

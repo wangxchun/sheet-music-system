@@ -1,8 +1,8 @@
-# AI 擷取結果
+# AI extraction results
 
-`tools/extract_toc.py` 的輸出會寫到這裡：
+`tools/extract_toc.py` writes its output here:
 
-- `擷取_書籍.csv`
-- `擷取_曲目.csv`
+- `extracted_books.csv`
+- `extracted_pieces.csv`
 
-校對方式見 `docs/05_建檔作業流程.md` 第 5 節。
+How to review them is in section 5 of `docs/05_cataloguing_workflow.md`.

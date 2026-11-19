@@ -2,7 +2,9 @@
 
 The spreadsheet template, the validator and the AI extraction tool all import
 these definitions, so a column renamed here changes everywhere at once.
-Sheet and column names are in Traditional Chinese because teachers see them.
+Every string a teacher sees in the spreadsheet (sheet names, column names,
+dropdown values, search-page text) is deliberately kept in Traditional Chinese.
+The code, comments and docs are in English.
 """
 
 import re
@@ -50,7 +52,7 @@ PIECE_COLUMNS = PIECE_INPUT_COLUMNS + PIECE_DERIVED_COLUMNS
 PIECE_REQUIRED = [PIECE_ID, PIECE_BOOK_ID, PIECE_TITLE, PIECE_COMPOSER, PIECE_PAGE]
 
 # --- Controlled vocabularies (the dropdown lists) ---------------------------
-# Studio staff may edit these lists in the 選項 sheet; these are the defaults.
+# Studio staff may edit these lists in the options sheet; these are the defaults.
 VOCAB = {
     BOOK_TYPE: ["教本", "曲集", "單曲", "考級教材", "練習曲集"],
     PIECE_LEVEL: [f"{n}級" for n in range(1, 9)],

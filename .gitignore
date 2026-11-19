@@ -12,7 +12,7 @@ output/*
 !output/README.md
 
 # Generated template: rebuild with `python3 tools/build_template.py`
-system/鋼琴教材目錄.xlsx
+system/piano_catalog.xlsx
 
 # Python
 __pycache__/

@@ -1,10 +1,10 @@
 # secrets/
 
-存放 Google 授權檔。這個資料夾除了本說明以外，全部被 `.gitignore` 排除，不會上傳到 GitHub。
+Holds the Google credential files. Everything in this folder except this README is excluded by `.gitignore` and never pushed to GitHub.
 
-| 檔案 | 來源 |
+| File | Source |
 |---|---|
-| `google_oauth_client.json` | 從 Google Cloud Console 下載的 OAuth 用戶端（桌面應用程式） |
-| `google_token.json` | 第一次執行 `tools/setup_google_sheet.py` 登入後自動產生 |
+| `google_oauth_client.json` | OAuth client (desktop app) downloaded from Google Cloud Console |
+| `google_token.json` | Created automatically after the first sign-in with `tools/setup_google_sheet.py` |
 
-設定步驟見 `docs/08_API與金鑰設定.md`。
+Setup steps are in `docs/08_api_and_credentials.md`.

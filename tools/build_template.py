@@ -2,14 +2,16 @@
 """Build the catalogue workbook that is imported into Google Sheets.
 
 Usage:
-    python3 tools/build_template.py [--rows 3000] [--out system/鋼琴教材目錄.xlsx]
+    python3 tools/build_template.py [--rows 3000] [--out system/piano_catalog.xlsx]
 
-The workbook has four sheets:
-  使用說明  legend: which cells to edit, which are automatic
-  書籍      one row per book, with a dropdown for 類型
-  曲目      one row per piece, with dropdowns for 程度/時期/風格 and two lookup
-            columns that pull the book title and location from 書籍
-  選項      the dropdown lists; staff may add values here
+The workbook has four sheets (tab names are in Chinese, see schema.py):
+  guide     legend: which cells to edit, which are automatic
+  books     one row per book, with a dropdown for the book type
+  pieces    one row per piece, with dropdowns for level/period/style and two
+            lookup columns that pull the book title and location from books
+  options   the dropdown lists; staff may add values here
+
+All text written into the workbook stays in Chinese because teachers read it.
 
 Example rows come from sample/ so the template and the sample data never drift.
 Formulas use only INDEX/MATCH/IFERROR so they work in Excel and Google Sheets.
@@ -97,7 +99,7 @@ def build_books(wb: Workbook, vocab_cols: dict, rows: int) -> None:
     ws = wb.create_sheet(s.BOOK_SHEET)
     cols = s.BOOK_COLUMNS
     write_header(ws, cols)
-    example = first_sample_row("書籍.csv")
+    example = first_sample_row("books.csv")
     for i, name in enumerate(cols, start=1):
         cell = ws.cell(row=2, column=i, value=example[name] or None)
         cell.font = Font(name=FONT)
@@ -109,7 +111,7 @@ def build_pieces(wb: Workbook, vocab_cols: dict, rows: int) -> None:
     ws = wb.create_sheet(s.PIECE_SHEET)
     cols = s.PIECE_COLUMNS
     write_header(ws, cols)
-    example = first_sample_row("曲目.csv")
+    example = first_sample_row("pieces.csv")
     for i, name in enumerate(s.PIECE_INPUT_COLUMNS, start=1):
         value = example[name]
         if name == s.PIECE_PAGE and value.isdigit():
@@ -169,7 +171,7 @@ def build_guide(wb: Workbook) -> None:
         ("書籍編號依序為 B0001、B0002…；曲目編號依序為 P00001、P00002…，編號不重複使用。", False),
         ("每本書至少要填「位置」或「檔案連結」其中一個。", False),
         ("頁碼填該曲目的起始頁。", False),
-        ("詳細說明請見交付文件中的《老師使用說明》與《管理者手冊》。", False),
+        ("詳細說明請見 docs/06_teacher_guide.md 與 docs/04_admin_manual.md。", False),
     ]
     for r, (text, bold) in enumerate(lines, start=1):
         ws.cell(row=r, column=1, value=text or None).font = Font(name=FONT, bold=bold, size=14 if r == 1 else 11)
@@ -178,8 +180,8 @@ def build_guide(wb: Workbook) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    parser.add_argument("--rows", type=int, default=3000, help="pre-filled rows in the 曲目 sheet")
-    parser.add_argument("--out", type=Path, default=ROOT / "system" / "鋼琴教材目錄.xlsx")
+    parser.add_argument("--rows", type=int, default=3000, help="pre-filled rows in the pieces sheet")
+    parser.add_argument("--out", type=Path, default=ROOT / "system" / "piano_catalog.xlsx")
     args = parser.parse_args()
 
     wb = Workbook()
@@ -191,7 +193,7 @@ def main() -> None:
     wb.move_sheet(s.VOCAB_SHEET, offset=2)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     wb.save(args.out)
-    print(f"已產生 {args.out}（曲目表預留 {args.rows} 列）")
+    print(f"Created {args.out} ({args.rows} rows pre-filled in the pieces sheet)")
 
 
 if __name__ == "__main__":

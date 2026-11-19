@@ -3,7 +3,7 @@
 
 Usage:
     python3.11 tools/extract_toc.py input/toc_photos \
-        --catalog-books 書籍.csv --catalog-pieces 曲目.csv --out output/
+        --catalog-books books.csv --catalog-pieces pieces.csv --out output/
 
 Input layout (one book per entry):
     input/toc_photos/
@@ -13,8 +13,10 @@ Input layout (one book per entry):
             02.jpg
 
 Output (UTF-8 CSV, same columns as the catalogue so rows paste straight in):
-    output/擷取_書籍.csv    one row per book; 類型 and 位置 are left blank for the reviewer
-    output/擷取_曲目.csv    one row per piece; 備註 marks every row for human review
+    output/extracted_books.csv    one row per book; type and location are left blank for the reviewer
+    output/extracted_pieces.csv   one row per piece; the notes column marks every row for human review
+
+The review notes written into the notes column stay in Chinese because teachers read them.
 
 IDs continue from the existing catalogue when --catalog-books/--catalog-pieces
 are given (the CSVs exported from Google Sheets); otherwise they start at 1.
@@ -24,7 +26,7 @@ into the catalogue, then the whole catalogue re-checked with validate_catalog.py
 
 Requirements: Python 3.10+, `pip install -r tools/requirements.txt`, and Claude
 API credentials: ANTHROPIC_API_KEY in .env (see .env.example), in the shell
-environment, or an `ant auth login` profile. Setup: docs/08_API與金鑰設定.md.
+environment, or an `ant auth login` profile. Setup: docs/08_api_and_credentials.md.
 """
 
 from __future__ import annotations
@@ -44,6 +46,7 @@ import schema as s
 MODEL = "claude-opus-5-5"
 IMAGE_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"}
 PDF_TYPE = "application/pdf"
+# Written into the notes column that teachers read, hence in Chinese.
 REVIEW_NOTE = "AI 擷取，待校對"
 UNSURE_NOTE = "AI 不確定，請特別確認"
 
@@ -93,7 +96,7 @@ Rules:
 
 @dataclass
 class BookSource:
-    name: str            # file or folder name, kept in 備註 for traceability
+    name: str            # file or folder name, kept in the notes column for traceability
     pages: List[Path]
 
 
@@ -207,14 +210,14 @@ def extract_book(client, source: BookSource) -> Extraction:
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Extract piece lists from TOC photos or PDFs with Claude.")
     parser.add_argument("input_dir", type=Path)
-    parser.add_argument("--catalog-books", type=Path, help="current 書籍 sheet exported as CSV")
-    parser.add_argument("--catalog-pieces", type=Path, help="current 曲目 sheet exported as CSV")
+    parser.add_argument("--catalog-books", type=Path, help="current books sheet exported as CSV")
+    parser.add_argument("--catalog-pieces", type=Path, help="current pieces sheet exported as CSV")
     parser.add_argument("--out", type=Path, default=Path("output"))
     args = parser.parse_args(argv)
 
     sources = collect_sources(args.input_dir)
     if not sources:
-        print(f"{args.input_dir} 裡沒有可處理的照片或 PDF。")
+        print(f"No photos or PDFs to process in {args.input_dir}.")
         return 1
 
     import anthropic  # imported here so the pure helpers are testable without the SDK
@@ -223,23 +226,23 @@ def main(argv: Optional[List[str]] = None) -> int:
     client = anthropic.Anthropic()
     extractions, failed = [], []
     for i, source in enumerate(sources, start=1):
-        print(f"[{i}/{len(sources)}] {source.name}（{len(source.pages)} 頁）")
+        print(f"[{i}/{len(sources)}] {source.name} ({len(source.pages)} page(s))")
         try:
             extractions.append(extract_book(client, source))
         except (anthropic.APIError, RuntimeError, json.JSONDecodeError) as exc:
             # Keep going: one unreadable book should not stop a batch of fifty.
-            print(f"  失敗：{exc}")
+            print(f"  failed: {exc}")
             failed.append(source.name)
 
     first_book = next_number(read_ids(args.catalog_books, s.BOOK_ID), s.BOOK_ID_PATTERN)
     first_piece = next_number(read_ids(args.catalog_pieces, s.PIECE_ID), s.PIECE_ID_PATTERN)
     books, pieces = to_rows(extractions, first_book, first_piece)
-    write_csv(args.out / "擷取_書籍.csv", s.BOOK_COLUMNS, books)
-    write_csv(args.out / "擷取_曲目.csv", s.PIECE_INPUT_COLUMNS, pieces)
+    write_csv(args.out / "extracted_books.csv", s.BOOK_COLUMNS, books)
+    write_csv(args.out / "extracted_pieces.csv", s.PIECE_INPUT_COLUMNS, pieces)
 
-    print(f"\n完成：{len(books)} 本書、{len(pieces)} 首曲目，輸出到 {args.out}/")
+    print(f"\nDone: {len(books)} book(s), {len(pieces)} piece(s), written to {args.out}/")
     if failed:
-        print(f"需要重做的 {len(failed)} 本：{', '.join(failed)}")
+        print(f"{len(failed)} book(s) to redo: {', '.join(failed)}")
     return 1 if failed else 0
 
 

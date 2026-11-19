@@ -36,13 +36,13 @@ def write_csv(path, columns, rows):
 class ValidatorTests(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
-        self.books = read_csv(SAMPLE / "書籍.csv")
-        self.pieces = read_csv(SAMPLE / "曲目.csv")
+        self.books = read_csv(SAMPLE / "books.csv")
+        self.pieces = read_csv(SAMPLE / "pieces.csv")
 
     def run_validator(self):
         write_csv(self.tmp / "b.csv", s.BOOK_COLUMNS, self.books)
         write_csv(self.tmp / "p.csv", s.PIECE_COLUMNS, self.pieces)
-        return v.validate(self.tmp / "b.csv", self.tmp / "p.csv", SAMPLE / "選項.csv")
+        return v.validate(self.tmp / "b.csv", self.tmp / "p.csv", SAMPLE / "options.csv")
 
     def assert_one_error_containing(self, text):
         report = self.run_validator()
@@ -76,18 +76,18 @@ class ValidatorTests(unittest.TestCase):
 
     def test_duplicate_id(self):
         self.pieces[1][s.PIECE_ID] = self.pieces[0][s.PIECE_ID]
-        self.assert_one_error_containing("重複")
+        self.assert_one_error_containing("duplicated")
 
     def test_bad_id_format(self):
         self.books[0][s.BOOK_ID] = "1"
         for piece in self.pieces:
             if piece[s.PIECE_BOOK_ID] == "B0001":
                 piece[s.PIECE_BOOK_ID] = "1"
-        self.assert_one_error_containing("格式不對")
+        self.assert_one_error_containing("badly formatted")
 
     def test_same_title_twice_in_one_book(self):
         self.pieces[1][s.PIECE_TITLE] = "  la candeur  (op. 100 no. 1)"
-        self.assert_one_error_containing("同一首曲子")
+        self.assert_one_error_containing("same piece")
 
     def test_same_title_by_different_composers_is_allowed(self):
         # Found on a real contents page: Haydn's "C major" and Mozart's "C major".
@@ -98,11 +98,11 @@ class ValidatorTests(unittest.TestCase):
 
     def test_page_must_be_positive_integer(self):
         self.pieces[0][s.PIECE_PAGE] = "2a"
-        self.assert_one_error_containing("頁碼")
+        self.assert_one_error_containing(s.PIECE_PAGE)
 
     def test_book_needs_location_or_link(self):
         self.books[0][s.BOOK_LOCATION] = ""
-        self.assert_one_error_containing("位置")
+        self.assert_one_error_containing(s.BOOK_LOCATION)
 
     def test_location_format(self):
         self.books[0][s.BOOK_LOCATION] = "A2"
@@ -112,14 +112,14 @@ class ValidatorTests(unittest.TestCase):
         columns = [c for c in s.BOOK_COLUMNS if c != s.BOOK_TYPE]
         write_csv(self.tmp / "b.csv", columns, [{c: r[c] for c in columns} for r in self.books])
         write_csv(self.tmp / "p.csv", s.PIECE_COLUMNS, self.pieces)
-        report = v.validate(self.tmp / "b.csv", self.tmp / "p.csv", SAMPLE / "選項.csv")
+        report = v.validate(self.tmp / "b.csv", self.tmp / "p.csv", SAMPLE / "options.csv")
         self.assertEqual(len(report.errors), 1)
         self.assertIn(s.BOOK_TYPE, report.errors[0])
 
     def test_cli_exit_codes(self):
         script = str(ROOT / "tools" / "validate_catalog.py")
         ok = subprocess.run(
-            [sys.executable, script, str(SAMPLE / "書籍.csv"), str(SAMPLE / "曲目.csv"), str(SAMPLE / "選項.csv")],
+            [sys.executable, script, str(SAMPLE / "books.csv"), str(SAMPLE / "pieces.csv"), str(SAMPLE / "options.csv")],
             capture_output=True,
         )
         self.assertEqual(ok.returncode, 0)
@@ -127,7 +127,7 @@ class ValidatorTests(unittest.TestCase):
         write_csv(self.tmp / "b.csv", s.BOOK_COLUMNS, self.books)
         write_csv(self.tmp / "p.csv", s.PIECE_COLUMNS, self.pieces)
         bad = subprocess.run(
-            [sys.executable, script, str(self.tmp / "b.csv"), str(self.tmp / "p.csv"), str(SAMPLE / "選項.csv")],
+            [sys.executable, script, str(self.tmp / "b.csv"), str(self.tmp / "p.csv"), str(SAMPLE / "options.csv")],
             capture_output=True,
         )
         self.assertEqual(bad.returncode, 1)
@@ -135,13 +135,13 @@ class ValidatorTests(unittest.TestCase):
 
 class SampleConsistencyTests(unittest.TestCase):
     def test_vocab_sample_matches_schema(self):
-        rows = read_csv(SAMPLE / "選項.csv")
+        rows = read_csv(SAMPLE / "options.csv")
         for field_name, values in s.VOCAB.items():
             self.assertEqual([r[field_name] for r in rows if r[field_name]], values)
 
     def test_sample_headers_match_schema(self):
-        self.assertEqual(list(read_csv(SAMPLE / "書籍.csv")[0]), s.BOOK_COLUMNS)
-        self.assertEqual(list(read_csv(SAMPLE / "曲目.csv")[0]), s.PIECE_COLUMNS)
+        self.assertEqual(list(read_csv(SAMPLE / "books.csv")[0]), s.BOOK_COLUMNS)
+        self.assertEqual(list(read_csv(SAMPLE / "pieces.csv")[0]), s.PIECE_COLUMNS)
 
 
 class ExtractionHelperTests(unittest.TestCase):
@@ -217,7 +217,7 @@ class ConfigAndPrivacyTests(unittest.TestCase):
         if subprocess.run(["git", "init", "-q", str(tmp)], capture_output=True).returncode != 0:
             self.skipTest("git not available")
         ignored = [".env", ".env.local", "secrets/google_token.json", "secrets/google_oauth_client.json",
-                   "input/toc_photos/book.jpg", "output/擷取_曲目.csv"]
+                   "input/toc_photos/book.jpg", "output/extracted_pieces.csv"]
         tracked = [".env.example", "secrets/README.md", "input/toc_photos/README.md", "output/README.md"]
         for rel in ignored + tracked:
             (tmp / rel).parent.mkdir(parents=True, exist_ok=True)
@@ -238,13 +238,13 @@ class ConfigAndPrivacyTests(unittest.TestCase):
 
 class SearchSheetTests(unittest.TestCase):
     def test_manual_shows_the_generated_formula(self):
-        manual = (ROOT / "docs" / "04_管理者手冊.md").read_text(encoding="utf-8")
+        manual = (ROOT / "docs" / "04_admin_manual.md").read_text(encoding="utf-8")
         self.assertIn(s.search_formula(), manual)
 
     def test_manual_headers_match_search_columns(self):
-        manual = (ROOT / "docs" / "04_管理者手冊.md").read_text(encoding="utf-8")
+        manual = (ROOT / "docs" / "04_admin_manual.md").read_text(encoding="utf-8")
         headers = [c.replace("（自動）", "") for c in s.SEARCH_COLUMNS]
-        self.assertIn("、".join(f"`{h}`" for h in headers), manual)
+        self.assertIn(", ".join(f"`{h}`" for h in headers), manual)
 
     def test_column_letter(self):
         self.assertEqual([s.column_letter(n) for n in (1, 14, 26, 27, 52)], ["A", "N", "Z", "AA", "AZ"])
