@@ -20,9 +20,7 @@ sys.path.insert(0, str(ROOT))
 HAS_DEPS = all(importlib.util.find_spec(m) for m in ("langgraph", "langchain_anthropic", "aiosqlite", "qdrant_client"))
 
 if HAS_DEPS:
-    from langchain_core.language_models import BaseChatModel
     from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
-    from langchain_core.outputs import ChatGeneration, ChatResult
     from langgraph.checkpoint.memory import InMemorySaver
     from langgraph.types import Command
 
@@ -30,21 +28,8 @@ if HAS_DEPS:
     from agent import tools as t
     from agent.graph import PROPOSE_TOOL, build_graph
 
-    class ScriptedModel(BaseChatModel):
-        """Returns the next scripted AIMessage on each call; records what it was sent."""
-        script: List[Any] = []
-        seen: List[Any] = []
-
-        @property
-        def _llm_type(self) -> str:
-            return "scripted"
-
-        def _generate(self, messages, stop=None, run_manager=None, **kwargs):
-            self.seen.append(messages)
-            return ChatResult(generations=[ChatGeneration(message=self.script.pop(0))])
-
-        def bind_tools(self, tools, **kwargs):
-            return self
+    sys.path.insert(0, str(ROOT / "tests"))
+    from scripted import ScriptedModel
 
 DEMO = ROOT / "sample" / "demo"
 
