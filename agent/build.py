@@ -3,6 +3,11 @@
 Usage:
     python -m agent.build [--books sample/demo/books.csv] [--pieces sample/demo/pieces.csv]
                           [--options sample/demo/options.csv]
+    python -m agent.build --reindex     # rebuild Qdrant from SQLite only
+
+A full build reloads SQLite from the CSVs, so books added through the agent's
+onboarding flow are dropped (the CSVs remain the demo's source data). --reindex
+keeps SQLite as it is and only rebuilds the derived vector index.
 
 DESIGN DECISION: the existing validator (tools/validate_catalog.py) is a hard
 gate. The agent never loads data that the studio's own checks would reject.
@@ -48,11 +53,13 @@ def main() -> None:
     parser.add_argument("--pieces", type=Path, default=db.DEMO_DIR / "pieces.csv")
     parser.add_argument("--options", type=Path, default=db.DEMO_DIR / "options.csv")
     parser.add_argument("--db", type=Path, default=db.DEFAULT_DB)
+    parser.add_argument("--reindex", action="store_true", help="rebuild only the Qdrant index from SQLite")
     args = parser.parse_args()
 
-    validate(args.books, args.pieces, args.options)
-    counts = db.build_database(args.books, args.pieces, args.db)
-    print(f"sqlite:   {counts['books']} books, {counts['pieces']} pieces -> {args.db}")
+    if not args.reindex:
+        validate(args.books, args.pieces, args.options)
+        counts = db.build_database(args.books, args.pieces, args.db)
+        print(f"sqlite:   {counts['books']} books, {counts['pieces']} pieces -> {args.db}")
     stats = index.build_index(load_catalogue_rows(args.db), index.doc_chunks())
     print(f"qdrant:   {stats['pieces']} pieces, {stats['doc_chunks']} doc chunks -> {index.QDRANT_PATH}")
 
