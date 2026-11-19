@@ -58,12 +58,25 @@ class SyntheticDataTests(unittest.TestCase):
         self.assertEqual(r.returncode, 0, r.stdout)
         self.assertIn("0 error(s)", r.stdout)
 
+    def test_conflicting_levels_are_refused(self):
+        from agent.synth import repertoire as r
+        original = r.BOOKS[-1]
+        first = original.pieces[0]
+        clash = r.BookSpec(original.title, original.book_type, original.period, original.style,
+                           pieces=[r.PieceSpec(first.title, first.composer, level=(first.level % 8) + 1)])
+        r.BOOKS.append(clash)
+        try:
+            with self.assertRaisesRegex(ValueError, "a piece has one level"):
+                g.generate(g.DEFAULT_SEED)
+        finally:
+            r.BOOKS.pop()
+
     def test_reprinted_pieces_keep_identical_traits(self):
         _, pieces = g.generate(g.DEFAULT_SEED)
         seen = {}
         for p in pieces:
             key = (p[s.PIECE_TITLE], p[s.PIECE_COMPOSER])
-            traits = (p[s.PIECE_PERIOD], p[s.PIECE_STYLE], p[s.PIECE_TECHNIQUE])
+            traits = (p[s.PIECE_LEVEL], p[s.PIECE_PERIOD], p[s.PIECE_STYLE], p[s.PIECE_TECHNIQUE])
             self.assertEqual(seen.setdefault(key, traits), traits, key)
         self.assertLess(len(seen), len(pieces))  # there really are reprints
 

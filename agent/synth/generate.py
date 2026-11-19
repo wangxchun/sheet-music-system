@@ -48,6 +48,8 @@ Row = Dict[str, str]
 
 @dataclass(frozen=True)
 class Traits:
+    """Properties of a piece itself, shared by every copy in every book."""
+    level: Optional[int]
     period: Optional[v.Period]
     style: v.Style
     technique: str
@@ -105,11 +107,14 @@ def generate(seed: int = DEFAULT_SEED) -> Tuple[List[Row], List[Row]]:
             if key in canonical:
                 # Same piece in a second book (graded compilations): keep traits identical.
                 traits = canonical[key]
+                if level != traits.level:
+                    raise ValueError(f"{piece.title!r} is level {traits.level} in its first book but {level} "
+                                     f"in {book.title!r}; a piece has one level (set it in repertoire.py)")
             else:
                 style = piece.style or book.style
                 technique = piece.technique or ", ".join(
                     rng.sample(TECHNIQUE_POOL[style], k=rng.choice([1, 2])))
-                traits = Traits(book.period, style, technique)
+                traits = Traits(level, book.period, style, technique)
                 canonical[key] = traits
 
             piece_id = s.piece_id(len(pieces) + 1)

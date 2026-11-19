@@ -58,7 +58,7 @@ P00056,B0003,Exercise No. 18 (Hanon),Hanon,37,4級,,浪漫,練習曲,finger inde
 P00057,B0003,Exercise No. 19 (Hanon),Hanon,39,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
 P00058,B0003,Exercise No. 20 (Hanon),Hanon,41,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
 P00059,B0004,La Candeur (Op. 100 No. 1),Burgmüller,5,2級,,浪漫,練習曲,legato melody,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
-P00060,B0004,Arabesque (Op. 100 No. 2),Burgmüller,7,2級,,浪漫,練習曲,"staccato, fast passages",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00060,B0004,Arabesque (Op. 100 No. 2),Burgmüller,7,3級,,浪漫,練習曲,"staccato, fast passages",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
 P00061,B0004,Pastorale (Op. 100 No. 3),Burgmüller,9,2級,,浪漫,練習曲,grace notes,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
 P00062,B0004,Petite Réunion (Op. 100 No. 4),Burgmüller,11,2級,,浪漫,練習曲,staccato thirds,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
 P00063,B0004,Innocence (Op. 100 No. 5),Burgmüller,13,2級,,浪漫,練習曲,"ornaments, legato",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
@@ -103,12 +103,12 @@ P00101,B0005,Study No. 18 (Op. 299),Czerny,46,7級,,浪漫,練習曲,arpeggios,,
 P00102,B0005,Study No. 19 (Op. 299),Czerny,47,7級,,浪漫,練習曲,"staccato, arpeggios",,,"Czerny: The School of Velocity, Op. 299",A-1-04
 P00103,B0005,Study No. 20 (Op. 299),Czerny,48,7級,,浪漫,練習曲,"octaves, fast passages",,,"Czerny: The School of Velocity, Op. 299",A-1-04
 P00104,B0006,"Minuet in F major, BWV Anh. 113",J.S. Bach,3,1級,,巴洛克,舞曲,dotted rhythm,,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
-P00105,B0006,"Minuet in G major, BWV Anh. 114",Petzold,5,1級,,巴洛克,舞曲,"phrasing, left-hand leaps",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00105,B0006,"Minuet in G major, BWV Anh. 114",Petzold,5,2級,,巴洛克,舞曲,"phrasing, left-hand leaps",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
 P00106,B0006,"Minuet in G minor, BWV Anh. 115",Petzold,7,1級,,巴洛克,舞曲,phrasing,,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
 P00107,B0006,"Minuet in G major, BWV Anh. 116",J.S. Bach,8,2級,,巴洛克,舞曲,"waltz accompaniment, dotted rhythm",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
 P00108,B0006,"Polonaise in G minor, BWV Anh. 119",J.S. Bach,9,2級,,巴洛克,舞曲,"phrasing, staccato",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
 P00109,B0006,"March in D major, BWV Anh. 122",C.P.E. Bach,10,2級,,巴洛克,小品,"dynamic control, phrasing",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
-P00110,B0006,"Musette in D major, BWV Anh. 126",J.S. Bach,12,3級,,巴洛克,舞曲,"phrasing, rubato",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00110,B0006,"Musette in D major, BWV Anh. 126",J.S. Bach,12,2級,,巴洛克,舞曲,"phrasing, rubato",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
 P00111,B0006,"Minuet in D minor, BWV Anh. 132",J.S. Bach,14,3級,,巴洛克,舞曲,"dotted rhythm, phrasing",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
 P00112,B0007,"Little Prelude in C major, BWV 924",J.S. Bach,5,3級,,巴洛克,小品,dynamic control,,,Bach: Little Preludes,B-1-02
 P00113,B0007,"Little Prelude in D major, BWV 925",J.S. Bach,8,3級,,巴洛克,小品,"cantabile melody, dynamic control",,,Bach: Little Preludes,B-1-02
@@ -123,11 +123,11 @@ P00121,B0007,"Little Prelude in D minor, BWV 935",J.S. Bach,26,4級,,巴洛克,�
 P00122,B0007,"Little Prelude in D major, BWV 936",J.S. Bach,29,4級,,巴洛克,小品,cantabile melody,,,Bach: Little Preludes,B-1-02
 P00123,B0007,"Little Prelude in E major, BWV 937",J.S. Bach,31,4級,,巴洛克,小品,cantabile melody,,,Bach: Little Preludes,B-1-02
 P00124,B0007,"Little Prelude in E minor, BWV 938",J.S. Bach,32,5級,,巴洛克,小品,"pedalling, voicing",,,Bach: Little Preludes,B-1-02
-P00125,B0007,"Little Prelude in C major, BWV 939",J.S. Bach,34,5級,,巴洛克,小品,voicing,https://example.com/demo/P00125.mp3,,Bach: Little Preludes,B-1-02
-P00126,B0007,"Little Prelude in D minor, BWV 940",J.S. Bach,37,5級,,巴洛克,小品,"pedalling, phrasing",,,Bach: Little Preludes,B-1-02
-P00127,B0007,"Little Prelude in E minor, BWV 941",J.S. Bach,38,5級,,巴洛克,小品,"legato, chords",,,Bach: Little Preludes,B-1-02
-P00128,B0007,"Little Prelude in A minor, BWV 942",J.S. Bach,39,5級,,巴洛克,小品,"chords, rubato",https://example.com/demo/P00128.mp3,,Bach: Little Preludes,B-1-02
-P00129,B0007,"Little Prelude in C minor, BWV 999",J.S. Bach,41,5級,,巴洛克,小品,"chords, legato",,,Bach: Little Preludes,B-1-02
+P00125,B0007,"Little Prelude in C major, BWV 939",J.S. Bach,34,3級,,巴洛克,小品,voicing,https://example.com/demo/P00125.mp3,,Bach: Little Preludes,B-1-02
+P00126,B0007,"Little Prelude in D minor, BWV 940",J.S. Bach,36,5級,,巴洛克,小品,"pedalling, phrasing",,,Bach: Little Preludes,B-1-02
+P00127,B0007,"Little Prelude in E minor, BWV 941",J.S. Bach,37,5級,,巴洛克,小品,"legato, chords",,,Bach: Little Preludes,B-1-02
+P00128,B0007,"Little Prelude in A minor, BWV 942",J.S. Bach,38,5級,,巴洛克,小品,"chords, rubato",https://example.com/demo/P00128.mp3,,Bach: Little Preludes,B-1-02
+P00129,B0007,"Little Prelude in C minor, BWV 999",J.S. Bach,40,5級,,巴洛克,小品,"chords, legato",,,Bach: Little Preludes,B-1-02
 P00130,B0008,"Invention No. 1 in C major, BWV 772",J.S. Bach,2,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
 P00131,B0008,"Invention No. 2 in C minor, BWV 773",J.S. Bach,5,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
 P00132,B0008,"Invention No. 3 in D major, BWV 774",J.S. Bach,7,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
@@ -166,8 +166,8 @@ P00164,B0010,Poor Orphan Child (Op. 68 No. 6),Schumann,17,3級,,浪漫,小品,"v
 P00165,B0010,Hunting Song (Op. 68 No. 7),Schumann,19,3級,,浪漫,小品,"chords, pedalling",,,"Schumann: Album for the Young, Op. 68",B-1-05
 P00166,B0010,The Wild Horseman (Op. 68 No. 8),Schumann,22,3級,,浪漫,小品,"legato, pedalling",,,"Schumann: Album for the Young, Op. 68",B-1-05
 P00167,B0010,Folk Song (Op. 68 No. 9),Schumann,24,3級,,浪漫,小品,legato,,,"Schumann: Album for the Young, Op. 68",B-1-05
-P00168,B0010,The Happy Farmer (Op. 68 No. 10),Schumann,27,4級,,浪漫,小品,dynamic control,,,"Schumann: Album for the Young, Op. 68",B-1-05
-P00169,B0010,Sicilienne (Op. 68 No. 11),Schumann,30,4級,,浪漫,小品,"voicing, cantabile melody",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00168,B0010,The Happy Farmer (Op. 68 No. 10),Schumann,27,3級,,浪漫,小品,dynamic control,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00169,B0010,Sicilienne (Op. 68 No. 11),Schumann,30,4級,,浪漫,小品,"dynamic control, pedalling",https://example.com/demo/P00169.mp3,,"Schumann: Album for the Young, Op. 68",B-1-05
 P00170,B0010,Knecht Ruprecht (Op. 68 No. 12),Schumann,32,4級,,浪漫,小品,"phrasing, dynamic control",https://example.com/demo/P00170.mp3,,"Schumann: Album for the Young, Op. 68",B-1-05
 P00171,B0010,"May, Sweet May (Op. 68 No. 13)",Schumann,34,4級,,浪漫,小品,chords,,,"Schumann: Album for the Young, Op. 68",B-1-05
 P00172,B0010,Little Study (Op. 68 No. 14),Schumann,38,4級,,浪漫,小品,rubato,,,"Schumann: Album for the Young, Op. 68",B-1-05

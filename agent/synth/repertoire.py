@@ -8,6 +8,11 @@ Levels are the studio's own 1-8 scale and are rough teaching estimates, not an
 authoritative grading. A book's `levels=(lo, hi)` spreads levels across its
 pieces in printed order (progressive collections); a piece's own `level`
 overrides that.
+
+A level belongs to the piece, not to the book: every copy of a piece has the
+same level. Pieces reprinted in the graded compilations carry an explicit level
+in their original book (LEVEL_OVERRIDES) that matches the compilation.
+generate.py refuses to run if two copies disagree.
 """
 
 from __future__ import annotations
@@ -82,6 +87,14 @@ TCHAIKOVSKY_39 = [
 ]
 TCHAIKOVSKY_DANCES = {"Waltz", "Mazurka", "Polka", "Kamarinskaya"}
 
+# Curated levels for pieces that the graded compilations reprint. The automatic
+# spread would put, for example, BWV 939 (an easy prelude) at level 5.
+LEVEL_OVERRIDES = {
+    "Arabesque (Op. 100 No. 2)": 3,
+    "The Happy Farmer (Op. 68 No. 10)": 3,
+    "Little Prelude in C major, BWV 939": 3,
+}
+
 INVENTION_KEYS = [
     "C major", "C minor", "D major", "D minor", "E-flat major", "E major", "E minor",
     "F major", "F minor", "G major", "G minor", "A major", "A minor", "B-flat major", "B minor",
@@ -125,7 +138,8 @@ BOOKS: List[BookSpec] = [
     ),
     BookSpec(
         "布爾格繆勒 25 首練習曲 Op. 100", "etudes", "romantic", "etude", series="Op. 100", levels=(2, 4),
-        pieces=[PieceSpec(f"{t} (Op. 100 No. {i})", "Burgmüller", technique=tech)
+        pieces=[PieceSpec(f"{t} (Op. 100 No. {i})", "Burgmüller", technique=tech,
+                          level=LEVEL_OVERRIDES.get(f"{t} (Op. 100 No. {i})"))
                 for i, (t, tech) in enumerate(BURGMULLER, start=1)],
     ),
     BookSpec(
@@ -137,18 +151,20 @@ BOOKS: List[BookSpec] = [
         "安娜·瑪德蓮娜·巴赫曲集", "collection", "baroque", "dance", levels=(1, 3),
         pieces=[
             PieceSpec("Minuet in F major, BWV Anh. 113", "J.S. Bach"),
-            PieceSpec("Minuet in G major, BWV Anh. 114", "Petzold"),
+            PieceSpec("Minuet in G major, BWV Anh. 114", "Petzold", level=2),
             PieceSpec("Minuet in G minor, BWV Anh. 115", "Petzold"),
             PieceSpec("Minuet in G major, BWV Anh. 116", "J.S. Bach"),
             PieceSpec("Polonaise in G minor, BWV Anh. 119", "J.S. Bach"),
             PieceSpec("March in D major, BWV Anh. 122", "C.P.E. Bach", style="character_piece"),
-            PieceSpec("Musette in D major, BWV Anh. 126", "J.S. Bach"),
+            PieceSpec("Musette in D major, BWV Anh. 126", "J.S. Bach", level=2),
             PieceSpec("Minuet in D minor, BWV Anh. 132", "J.S. Bach"),
         ],
     ),
     BookSpec(
         "Bach: Little Preludes", "collection", "baroque", "character_piece", levels=(3, 5),
-        pieces=[PieceSpec(f"Little Prelude in {k}, BWV {n}", "J.S. Bach") for k, n in LITTLE_PRELUDES],
+        pieces=[PieceSpec(f"Little Prelude in {k}, BWV {n}", "J.S. Bach",
+                          level=LEVEL_OVERRIDES.get(f"Little Prelude in {k}, BWV {n}"))
+                for k, n in LITTLE_PRELUDES],
     ),
     BookSpec(
         "Bach: Two-Part Inventions", "collection", "baroque", "etude", levels=(5, 6),
@@ -169,7 +185,8 @@ BOOKS: List[BookSpec] = [
     ),
     BookSpec(
         "Schumann: Album for the Young, Op. 68", "collection", "romantic", "character_piece", levels=(2, 5),
-        pieces=[PieceSpec(f"{t} (Op. 68 No. {i})", "Schumann") for i, t in enumerate(SCHUMANN_68, start=1)],
+        pieces=[PieceSpec(f"{t} (Op. 68 No. {i})", "Schumann", level=LEVEL_OVERRIDES.get(f"{t} (Op. 68 No. {i})"))
+                for i, t in enumerate(SCHUMANN_68, start=1)],
     ),
     BookSpec(
         "Tchaikovsky: Album for the Young, Op. 39", "collection", "romantic", "character_piece", levels=(3, 5),
