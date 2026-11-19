@@ -14,10 +14,17 @@ output/*
 # Generated template: rebuild with `python3 tools/build_template.py`
 system/piano_catalog.xlsx
 
+# Agent: local SQLite database and Qdrant index, rebuilt by `python -m agent.build`
+agent/.data/
+
+# Internal study notes: never pushed
+notes/
+
 # Python
 __pycache__/
 *.pyc
 .venv/
+.mypy_cache/
 
 # OS
 .DS_Store

@@ -1,0 +1,306 @@
+﻿曲目編號,書籍編號,曲名,作曲家,頁碼,程度,考級,時期,風格,技巧重點,示範音檔,備註,書名（自動）,位置（自動）
+P00001,B0001,Hot Cross Buns,Traditional,2,1級,,,小品,five-finger position,,,鋼琴入門教本 第一冊,A-1-01
+P00002,B0001,Lightly Row,Traditional,3,1級,,,小品,five-finger position,,,鋼琴入門教本 第一冊,A-1-01
+P00003,B0001,Au clair de la lune,Traditional,5,1級,,,小品,"legato, counting",,,鋼琴入門教本 第一冊,A-1-01
+P00004,B0001,"Twinkle, Twinkle, Little Star",Traditional,7,1級,,,小品,hand position,,,鋼琴入門教本 第一冊,A-1-01
+P00005,B0001,London Bridge,Traditional,9,1級,,,小品,counting,,,鋼琴入門教本 第一冊,A-1-01
+P00006,B0001,Ode to Joy (arr.),Beethoven,10,1級,,,小品,"legato, hand position",https://example.com/demo/P00006.mp3,,鋼琴入門教本 第一冊,A-1-01
+P00007,B0001,Jingle Bells (arr.),Pierpont,11,1級,,,流行改編,simple chords,,,鋼琴入門教本 第一冊,A-1-01
+P00008,B0001,Minuet in G (simplified),Petzold,13,2級,,,舞曲,phrasing,,,鋼琴入門教本 第一冊,A-1-01
+P00009,B0002,Exercise No. 1 (Op. 599),Czerny,5,1級,,浪漫,練習曲,"legato, left-hand agility",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00010,B0002,Exercise No. 2 (Op. 599),Czerny,6,1級,,浪漫,練習曲,"broken chords, octaves",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00011,B0002,Exercise No. 3 (Op. 599),Czerny,8,1級,,浪漫,練習曲,"arpeggios, trills",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00012,B0002,Exercise No. 4 (Op. 599),Czerny,10,1級,,浪漫,練習曲,"fast passages, finger independence",https://example.com/demo/P00012.mp3,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00013,B0002,Exercise No. 5 (Op. 599),Czerny,12,1級,,浪漫,練習曲,finger independence,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00014,B0002,Exercise No. 6 (Op. 599),Czerny,14,1級,,浪漫,練習曲,"octaves, staccato",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00015,B0002,Exercise No. 7 (Op. 599),Czerny,16,1級,,浪漫,練習曲,trills,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00016,B0002,Exercise No. 8 (Op. 599),Czerny,17,1級,,浪漫,練習曲,octaves,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00017,B0002,Exercise No. 9 (Op. 599),Czerny,18,1級,,浪漫,練習曲,"fast passages, arpeggios",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00018,B0002,Exercise No. 10 (Op. 599),Czerny,19,1級,,浪漫,練習曲,left-hand agility,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00019,B0002,Exercise No. 11 (Op. 599),Czerny,21,2級,,浪漫,練習曲,"octaves, finger independence",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00020,B0002,Exercise No. 12 (Op. 599),Czerny,23,2級,,浪漫,練習曲,"finger independence, left-hand agility",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00021,B0002,Exercise No. 13 (Op. 599),Czerny,25,2級,,浪漫,練習曲,scales,https://example.com/demo/P00021.mp3,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00022,B0002,Exercise No. 14 (Op. 599),Czerny,28,2級,,浪漫,練習曲,"octaves, fast passages",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00023,B0002,Exercise No. 15 (Op. 599),Czerny,29,2級,,浪漫,練習曲,"fast passages, left-hand agility",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00024,B0002,Exercise No. 16 (Op. 599),Czerny,31,2級,,浪漫,練習曲,"octaves, scales",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00025,B0002,Exercise No. 17 (Op. 599),Czerny,33,2級,,浪漫,練習曲,"broken chords, fast passages",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00026,B0002,Exercise No. 18 (Op. 599),Czerny,36,2級,,浪漫,練習曲,"fast passages, arpeggios",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00027,B0002,Exercise No. 19 (Op. 599),Czerny,39,2級,,浪漫,練習曲,"broken chords, staccato",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00028,B0002,Exercise No. 20 (Op. 599),Czerny,41,2級,,浪漫,練習曲,repeated notes,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00029,B0002,Exercise No. 21 (Op. 599),Czerny,43,3級,,浪漫,練習曲,fast passages,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00030,B0002,Exercise No. 22 (Op. 599),Czerny,44,3級,,浪漫,練習曲,fast passages,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00031,B0002,Exercise No. 23 (Op. 599),Czerny,45,3級,,浪漫,練習曲,repeated notes,https://example.com/demo/P00031.mp3,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00032,B0002,Exercise No. 24 (Op. 599),Czerny,46,3級,,浪漫,練習曲,"left-hand agility, legato",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00033,B0002,Exercise No. 25 (Op. 599),Czerny,48,3級,,浪漫,練習曲,"arpeggios, octaves",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00034,B0002,Exercise No. 26 (Op. 599),Czerny,51,3級,,浪漫,練習曲,trills,,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00035,B0002,Exercise No. 27 (Op. 599),Czerny,54,3級,,浪漫,練習曲,"broken chords, finger independence",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00036,B0002,Exercise No. 28 (Op. 599),Czerny,55,3級,,浪漫,練習曲,"octaves, finger independence",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00037,B0002,Exercise No. 29 (Op. 599),Czerny,56,3級,,浪漫,練習曲,finger independence,https://example.com/demo/P00037.mp3,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00038,B0002,Exercise No. 30 (Op. 599),Czerny,57,3級,,浪漫,練習曲,"broken chords, scales",,,徹爾尼 599 鋼琴初步教本,A-1-02
+P00039,B0003,Exercise No. 1 (Hanon),Hanon,4,2級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00040,B0003,Exercise No. 2 (Hanon),Hanon,5,2級,,浪漫,練習曲,finger independence,https://example.com/demo/P00040.mp3,,哈農 鋼琴練指法,
+P00041,B0003,Exercise No. 3 (Hanon),Hanon,7,2級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00042,B0003,Exercise No. 4 (Hanon),Hanon,9,2級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00043,B0003,Exercise No. 5 (Hanon),Hanon,10,2級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00044,B0003,Exercise No. 6 (Hanon),Hanon,12,2級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00045,B0003,Exercise No. 7 (Hanon),Hanon,13,2級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00046,B0003,Exercise No. 8 (Hanon),Hanon,16,3級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00047,B0003,Exercise No. 9 (Hanon),Hanon,19,3級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00048,B0003,Exercise No. 10 (Hanon),Hanon,22,3級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00049,B0003,Exercise No. 11 (Hanon),Hanon,25,3級,,浪漫,練習曲,finger independence,https://example.com/demo/P00049.mp3,,哈農 鋼琴練指法,
+P00050,B0003,Exercise No. 12 (Hanon),Hanon,27,3級,,浪漫,練習曲,finger independence,https://example.com/demo/P00050.mp3,,哈農 鋼琴練指法,
+P00051,B0003,Exercise No. 13 (Hanon),Hanon,30,3級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00052,B0003,Exercise No. 14 (Hanon),Hanon,31,3級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00053,B0003,Exercise No. 15 (Hanon),Hanon,32,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00054,B0003,Exercise No. 16 (Hanon),Hanon,34,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00055,B0003,Exercise No. 17 (Hanon),Hanon,35,4級,,浪漫,練習曲,finger independence,https://example.com/demo/P00055.mp3,,哈農 鋼琴練指法,
+P00056,B0003,Exercise No. 18 (Hanon),Hanon,37,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00057,B0003,Exercise No. 19 (Hanon),Hanon,39,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00058,B0003,Exercise No. 20 (Hanon),Hanon,41,4級,,浪漫,練習曲,finger independence,,,哈農 鋼琴練指法,
+P00059,B0004,La Candeur (Op. 100 No. 1),Burgmüller,5,2級,,浪漫,練習曲,legato melody,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00060,B0004,Arabesque (Op. 100 No. 2),Burgmüller,7,2級,,浪漫,練習曲,"staccato, fast passages",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00061,B0004,Pastorale (Op. 100 No. 3),Burgmüller,9,2級,,浪漫,練習曲,grace notes,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00062,B0004,Petite Réunion (Op. 100 No. 4),Burgmüller,11,2級,,浪漫,練習曲,staccato thirds,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00063,B0004,Innocence (Op. 100 No. 5),Burgmüller,13,2級,,浪漫,練習曲,"ornaments, legato",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00064,B0004,Progrès (Op. 100 No. 6),Burgmüller,14,2級,,浪漫,練習曲,scales,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00065,B0004,Le Courant Limpide (Op. 100 No. 7),Burgmüller,16,2級,,浪漫,練習曲,rippling right hand,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00066,B0004,La Gracieuse (Op. 100 No. 8),Burgmüller,19,2級,,浪漫,練習曲,"turns, ornaments",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00067,B0004,La Chasse (Op. 100 No. 9),Burgmüller,21,2級,,浪漫,練習曲,"repeated notes, fast tempo",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00068,B0004,Tendre Fleur (Op. 100 No. 10),Burgmüller,22,3級,,浪漫,練習曲,chord phrasing,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00069,B0004,La Bergeronnette (Op. 100 No. 11),Burgmüller,23,3級,,浪漫,練習曲,fast triplets,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00070,B0004,L'Adieu (Op. 100 No. 12),Burgmüller,26,3級,,浪漫,練習曲,left-hand melody,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00071,B0004,Consolation (Op. 100 No. 13),Burgmüller,29,3級,,浪漫,練習曲,cantabile melody,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00072,B0004,La Styrienne (Op. 100 No. 14),Burgmüller,32,3級,,浪漫,練習曲,waltz rhythm,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00073,B0004,Ballade (Op. 100 No. 15),Burgmüller,33,3級,,浪漫,練習曲,staccato chords,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00074,B0004,Douce Plainte (Op. 100 No. 16),Burgmüller,34,3級,,浪漫,練習曲,expressive melody,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00075,B0004,Babillarde (Op. 100 No. 17),Burgmüller,37,3級,,浪漫,練習曲,fast passages,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00076,B0004,Inquiétude (Op. 100 No. 18),Burgmüller,40,4級,,浪漫,練習曲,broken chords,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00077,B0004,Ave Maria (Op. 100 No. 19),Burgmüller,43,4級,,浪漫,練習曲,chord voicing,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00078,B0004,Tarentelle (Op. 100 No. 20),Burgmüller,45,4級,,浪漫,練習曲,"fast tempo, staccato",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00079,B0004,L'Harmonie des Anges (Op. 100 No. 21),Burgmüller,48,4級,,浪漫,練習曲,arpeggios,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00080,B0004,Barcarolle (Op. 100 No. 22),Burgmüller,50,4級,,浪漫,練習曲,left-hand accompaniment,https://example.com/demo/P00080.mp3,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00081,B0004,Le Retour (Op. 100 No. 23),Burgmüller,53,4級,,浪漫,練習曲,repeated notes,https://example.com/demo/P00081.mp3,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00082,B0004,L'Hirondelle (Op. 100 No. 24),Burgmüller,57,4級,,浪漫,練習曲,hand crossing,,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00083,B0004,La Chevaleresque (Op. 100 No. 25),Burgmüller,58,4級,,浪漫,練習曲,"dotted rhythm, staccato",,,布爾格繆勒 25 首練習曲 Op. 100,A-1-03
+P00084,B0005,Study No. 1 (Op. 299),Czerny,2,5級,,浪漫,練習曲,"staccato, trills",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00085,B0005,Study No. 2 (Op. 299),Czerny,5,5級,,浪漫,練習曲,"arpeggios, staccato",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00086,B0005,Study No. 3 (Op. 299),Czerny,6,5級,,浪漫,練習曲,"staccato, finger independence",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00087,B0005,Study No. 4 (Op. 299),Czerny,7,5級,,浪漫,練習曲,repeated notes,https://example.com/demo/P00087.mp3,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00088,B0005,Study No. 5 (Op. 299),Czerny,8,5級,,浪漫,練習曲,left-hand agility,,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00089,B0005,Study No. 6 (Op. 299),Czerny,11,5級,,浪漫,練習曲,"fast passages, trills",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00090,B0005,Study No. 7 (Op. 299),Czerny,12,5級,,浪漫,練習曲,"legato, trills",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00091,B0005,Study No. 8 (Op. 299),Czerny,16,6級,,浪漫,練習曲,"left-hand agility, broken chords",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00092,B0005,Study No. 9 (Op. 299),Czerny,21,6級,,浪漫,練習曲,"finger independence, staccato",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00093,B0005,Study No. 10 (Op. 299),Czerny,24,6級,,浪漫,練習曲,finger independence,,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00094,B0005,Study No. 11 (Op. 299),Czerny,27,6級,,浪漫,練習曲,"staccato, broken chords",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00095,B0005,Study No. 12 (Op. 299),Czerny,31,6級,,浪漫,練習曲,"trills, scales",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00096,B0005,Study No. 13 (Op. 299),Czerny,34,6級,,浪漫,練習曲,octaves,https://example.com/demo/P00096.mp3,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00097,B0005,Study No. 14 (Op. 299),Czerny,35,6級,,浪漫,練習曲,trills,https://example.com/demo/P00097.mp3,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00098,B0005,Study No. 15 (Op. 299),Czerny,36,7級,,浪漫,練習曲,octaves,,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00099,B0005,Study No. 16 (Op. 299),Czerny,39,7級,,浪漫,練習曲,finger independence,,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00100,B0005,Study No. 17 (Op. 299),Czerny,42,7級,,浪漫,練習曲,"finger independence, left-hand agility",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00101,B0005,Study No. 18 (Op. 299),Czerny,46,7級,,浪漫,練習曲,arpeggios,,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00102,B0005,Study No. 19 (Op. 299),Czerny,47,7級,,浪漫,練習曲,"staccato, arpeggios",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00103,B0005,Study No. 20 (Op. 299),Czerny,48,7級,,浪漫,練習曲,"octaves, fast passages",,,"Czerny: The School of Velocity, Op. 299",A-1-04
+P00104,B0006,"Minuet in F major, BWV Anh. 113",J.S. Bach,3,1級,,巴洛克,舞曲,dotted rhythm,,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00105,B0006,"Minuet in G major, BWV Anh. 114",Petzold,5,1級,,巴洛克,舞曲,"phrasing, left-hand leaps",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00106,B0006,"Minuet in G minor, BWV Anh. 115",Petzold,7,1級,,巴洛克,舞曲,phrasing,,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00107,B0006,"Minuet in G major, BWV Anh. 116",J.S. Bach,8,2級,,巴洛克,舞曲,"waltz accompaniment, dotted rhythm",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00108,B0006,"Polonaise in G minor, BWV Anh. 119",J.S. Bach,9,2級,,巴洛克,舞曲,"phrasing, staccato",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00109,B0006,"March in D major, BWV Anh. 122",C.P.E. Bach,10,2級,,巴洛克,小品,"dynamic control, phrasing",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00110,B0006,"Musette in D major, BWV Anh. 126",J.S. Bach,12,3級,,巴洛克,舞曲,"phrasing, rubato",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00111,B0006,"Minuet in D minor, BWV Anh. 132",J.S. Bach,14,3級,,巴洛克,舞曲,"dotted rhythm, phrasing",,,安娜·瑪德蓮娜·巴赫曲集,B-1-01
+P00112,B0007,"Little Prelude in C major, BWV 924",J.S. Bach,5,3級,,巴洛克,小品,dynamic control,,,Bach: Little Preludes,B-1-02
+P00113,B0007,"Little Prelude in D major, BWV 925",J.S. Bach,8,3級,,巴洛克,小品,"cantabile melody, dynamic control",,,Bach: Little Preludes,B-1-02
+P00114,B0007,"Little Prelude in D minor, BWV 926",J.S. Bach,10,3級,,巴洛克,小品,"legato, pedalling",,,Bach: Little Preludes,B-1-02
+P00115,B0007,"Little Prelude in F major, BWV 927",J.S. Bach,11,3級,,巴洛克,小品,rubato,,,Bach: Little Preludes,B-1-02
+P00116,B0007,"Little Prelude in F major, BWV 928",J.S. Bach,14,3級,,巴洛克,小品,"cantabile melody, rubato",,,Bach: Little Preludes,B-1-02
+P00117,B0007,"Little Prelude in G minor, BWV 929",J.S. Bach,17,3級,,巴洛克,小品,pedalling,https://example.com/demo/P00117.mp3,,Bach: Little Preludes,B-1-02
+P00118,B0007,"Little Prelude in G minor, BWV 930",J.S. Bach,20,4級,,巴洛克,小品,"dynamic control, legato",,,Bach: Little Preludes,B-1-02
+P00119,B0007,"Little Prelude in C major, BWV 933",J.S. Bach,21,4級,,巴洛克,小品,voicing,,,Bach: Little Preludes,B-1-02
+P00120,B0007,"Little Prelude in C minor, BWV 934",J.S. Bach,24,4級,,巴洛克,小品,"dynamic control, pedalling",,,Bach: Little Preludes,B-1-02
+P00121,B0007,"Little Prelude in D minor, BWV 935",J.S. Bach,26,4級,,巴洛克,小品,chords,,,Bach: Little Preludes,B-1-02
+P00122,B0007,"Little Prelude in D major, BWV 936",J.S. Bach,29,4級,,巴洛克,小品,cantabile melody,,,Bach: Little Preludes,B-1-02
+P00123,B0007,"Little Prelude in E major, BWV 937",J.S. Bach,31,4級,,巴洛克,小品,cantabile melody,,,Bach: Little Preludes,B-1-02
+P00124,B0007,"Little Prelude in E minor, BWV 938",J.S. Bach,32,5級,,巴洛克,小品,"pedalling, voicing",,,Bach: Little Preludes,B-1-02
+P00125,B0007,"Little Prelude in C major, BWV 939",J.S. Bach,34,5級,,巴洛克,小品,voicing,https://example.com/demo/P00125.mp3,,Bach: Little Preludes,B-1-02
+P00126,B0007,"Little Prelude in D minor, BWV 940",J.S. Bach,37,5級,,巴洛克,小品,"pedalling, phrasing",,,Bach: Little Preludes,B-1-02
+P00127,B0007,"Little Prelude in E minor, BWV 941",J.S. Bach,38,5級,,巴洛克,小品,"legato, chords",,,Bach: Little Preludes,B-1-02
+P00128,B0007,"Little Prelude in A minor, BWV 942",J.S. Bach,39,5級,,巴洛克,小品,"chords, rubato",https://example.com/demo/P00128.mp3,,Bach: Little Preludes,B-1-02
+P00129,B0007,"Little Prelude in C minor, BWV 999",J.S. Bach,41,5級,,巴洛克,小品,"chords, legato",,,Bach: Little Preludes,B-1-02
+P00130,B0008,"Invention No. 1 in C major, BWV 772",J.S. Bach,2,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00131,B0008,"Invention No. 2 in C minor, BWV 773",J.S. Bach,5,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00132,B0008,"Invention No. 3 in D major, BWV 774",J.S. Bach,7,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00133,B0008,"Invention No. 4 in D minor, BWV 775",J.S. Bach,11,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00134,B0008,"Invention No. 5 in E-flat major, BWV 776",J.S. Bach,14,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00135,B0008,"Invention No. 6 in E major, BWV 777",J.S. Bach,18,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00136,B0008,"Invention No. 7 in E minor, BWV 778",J.S. Bach,20,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00137,B0008,"Invention No. 8 in F major, BWV 779",J.S. Bach,24,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00138,B0008,"Invention No. 9 in F minor, BWV 780",J.S. Bach,27,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00139,B0008,"Invention No. 10 in G major, BWV 781",J.S. Bach,30,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00140,B0008,"Invention No. 11 in G minor, BWV 782",J.S. Bach,35,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00141,B0008,"Invention No. 12 in A major, BWV 783",J.S. Bach,37,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00142,B0008,"Invention No. 13 in A minor, BWV 784",J.S. Bach,42,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00143,B0008,"Invention No. 14 in B-flat major, BWV 785",J.S. Bach,44,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00144,B0008,"Invention No. 15 in B minor, BWV 786",J.S. Bach,47,6級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,Bach: Two-Part Inventions,B-1-03
+P00145,B0009,"Sonatina in C major, Op. 36 No. 1",Clementi,4,3級,,古典,奏鳴曲,"phrasing, scales",,,Sonatina Album,B-1-04
+P00146,B0009,"Sonatina in G major, Op. 36 No. 2",Clementi,6,3級,,古典,奏鳴曲,phrasing,,,Sonatina Album,B-1-04
+P00147,B0009,"Sonatina in C major, Op. 36 No. 3",Clementi,9,3級,,古典,奏鳴曲,phrasing,,,Sonatina Album,B-1-04
+P00148,B0009,"Sonatina in F major, Op. 36 No. 4",Clementi,11,3級,,古典,奏鳴曲,"articulation, Alberti bass",,,Sonatina Album,B-1-04
+P00149,B0009,"Sonatina in G major, Op. 36 No. 5",Clementi,13,3級,,古典,奏鳴曲,"phrasing, Alberti bass",,,Sonatina Album,B-1-04
+P00150,B0009,"Sonatina in D major, Op. 36 No. 6",Clementi,15,4級,,古典,奏鳴曲,articulation,,,Sonatina Album,B-1-04
+P00151,B0009,"Sonatina in C major, Op. 55 No. 1",Kuhlau,18,4級,,古典,奏鳴曲,articulation,,,Sonatina Album,B-1-04
+P00152,B0009,"Sonatina in G major, Op. 55 No. 2",Kuhlau,19,4級,,古典,奏鳴曲,"dynamic contrast, phrasing",https://example.com/demo/P00152.mp3,,Sonatina Album,B-1-04
+P00153,B0009,"Sonatina in C major, Op. 55 No. 3",Kuhlau,23,4級,,古典,奏鳴曲,"articulation, phrasing",https://example.com/demo/P00153.mp3,,Sonatina Album,B-1-04
+P00154,B0009,"Sonatina in F major, Op. 55 No. 4",Kuhlau,25,4級,,古典,奏鳴曲,phrasing,,,Sonatina Album,B-1-04
+P00155,B0009,"Sonatina in D major, Op. 55 No. 5",Kuhlau,27,5級,,古典,奏鳴曲,"dynamic contrast, phrasing",,,Sonatina Album,B-1-04
+P00156,B0009,"Sonatina in C major, Op. 55 No. 6",Kuhlau,30,5級,,古典,奏鳴曲,dynamic contrast,,,Sonatina Album,B-1-04
+P00157,B0009,"Sonatina in G major, Anh. 5 No. 1",Beethoven,31,3級,,古典,奏鳴曲,scales,,,Sonatina Album,B-1-04
+P00158,B0009,"Sonatina in F major, Anh. 5 No. 2",Beethoven,32,4級,,古典,奏鳴曲,"scales, dynamic contrast",,,Sonatina Album,B-1-04
+P00159,B0010,Melody (Op. 68 No. 1),Schumann,5,2級,,浪漫,小品,pedalling,https://example.com/demo/P00159.mp3,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00160,B0010,Soldiers' March (Op. 68 No. 2),Schumann,7,2級,,浪漫,小品,voicing,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00161,B0010,Humming Song (Op. 68 No. 3),Schumann,10,2級,,浪漫,小品,chords,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00162,B0010,Chorale (Op. 68 No. 4),Schumann,12,2級,,浪漫,小品,"dynamic control, voicing",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00163,B0010,A Little Piece (Op. 68 No. 5),Schumann,14,2級,,浪漫,小品,"dynamic control, phrasing",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00164,B0010,Poor Orphan Child (Op. 68 No. 6),Schumann,17,3級,,浪漫,小品,"voicing, cantabile melody",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00165,B0010,Hunting Song (Op. 68 No. 7),Schumann,19,3級,,浪漫,小品,"chords, pedalling",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00166,B0010,The Wild Horseman (Op. 68 No. 8),Schumann,22,3級,,浪漫,小品,"legato, pedalling",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00167,B0010,Folk Song (Op. 68 No. 9),Schumann,24,3級,,浪漫,小品,legato,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00168,B0010,The Happy Farmer (Op. 68 No. 10),Schumann,27,4級,,浪漫,小品,dynamic control,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00169,B0010,Sicilienne (Op. 68 No. 11),Schumann,30,4級,,浪漫,小品,"voicing, cantabile melody",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00170,B0010,Knecht Ruprecht (Op. 68 No. 12),Schumann,32,4級,,浪漫,小品,"phrasing, dynamic control",https://example.com/demo/P00170.mp3,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00171,B0010,"May, Sweet May (Op. 68 No. 13)",Schumann,34,4級,,浪漫,小品,chords,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00172,B0010,Little Study (Op. 68 No. 14),Schumann,38,4級,,浪漫,小品,rubato,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00173,B0010,Spring Song (Op. 68 No. 15),Schumann,41,5級,,浪漫,小品,"voicing, legato",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00174,B0010,First Loss (Op. 68 No. 16),Schumann,44,5級,,浪漫,小品,"phrasing, legato",,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00175,B0010,Little Morning Wanderer (Op. 68 No. 17),Schumann,46,5級,,浪漫,小品,voicing,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00176,B0010,The Reaper's Song (Op. 68 No. 18),Schumann,48,5級,,浪漫,小品,cantabile melody,,,"Schumann: Album for the Young, Op. 68",B-1-05
+P00177,B0011,Morning Prayer (Op. 39 No. 1),Tchaikovsky,3,3級,,浪漫,小品,legato,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00178,B0011,Winter Morning (Op. 39 No. 2),Tchaikovsky,6,3級,,浪漫,小品,"voicing, rubato",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00179,B0011,Playing Hobby-Horses (Op. 39 No. 3),Tchaikovsky,9,3級,,浪漫,小品,voicing,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00180,B0011,Mama (Op. 39 No. 4),Tchaikovsky,11,3級,,浪漫,小品,"cantabile melody, voicing",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00181,B0011,March of the Wooden Soldiers (Op. 39 No. 5),Tchaikovsky,13,3級,,浪漫,小品,chords,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00182,B0011,The Sick Doll (Op. 39 No. 6),Tchaikovsky,15,3級,,浪漫,小品,dynamic control,https://example.com/demo/P00182.mp3,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00183,B0011,The Doll's Funeral (Op. 39 No. 7),Tchaikovsky,18,3級,,浪漫,小品,chords,https://example.com/demo/P00183.mp3,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00184,B0011,Waltz (Op. 39 No. 8),Tchaikovsky,19,3級,,浪漫,舞曲,"left-hand leaps, staccato",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00185,B0011,The New Doll (Op. 39 No. 9),Tchaikovsky,20,4級,,浪漫,小品,rubato,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00186,B0011,Mazurka (Op. 39 No. 10),Tchaikovsky,21,4級,,浪漫,舞曲,"phrasing, rubato",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00187,B0011,Russian Song (Op. 39 No. 11),Tchaikovsky,23,4級,,浪漫,小品,rubato,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00188,B0011,The Peasant Plays the Accordion (Op. 39 No. 12),Tchaikovsky,27,4級,,浪漫,小品,dynamic control,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00189,B0011,Kamarinskaya (Op. 39 No. 13),Tchaikovsky,31,4級,,浪漫,舞曲,"rubato, staccato",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00190,B0011,Polka (Op. 39 No. 14),Tchaikovsky,34,4級,,浪漫,舞曲,"left-hand leaps, phrasing",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00191,B0011,Italian Song (Op. 39 No. 15),Tchaikovsky,36,4級,,浪漫,小品,pedalling,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00192,B0011,Old French Song (Op. 39 No. 16),Tchaikovsky,39,4級,,浪漫,小品,pedalling,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00193,B0011,German Song (Op. 39 No. 17),Tchaikovsky,43,5級,,浪漫,小品,phrasing,https://example.com/demo/P00193.mp3,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00194,B0011,Neapolitan Song (Op. 39 No. 18),Tchaikovsky,45,5級,,浪漫,小品,"legato, dynamic control",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00195,B0011,Nanny's Tale (Op. 39 No. 19),Tchaikovsky,46,5級,,浪漫,小品,"chords, voicing",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00196,B0011,Baba Yaga (Op. 39 No. 20),Tchaikovsky,50,5級,,浪漫,小品,pedalling,,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00197,B0011,Sweet Dream (Op. 39 No. 21),Tchaikovsky,52,5級,,浪漫,小品,"chords, rubato",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00198,B0011,Song of the Lark (Op. 39 No. 22),Tchaikovsky,53,5級,,浪漫,小品,"legato, dynamic control",https://example.com/demo/P00198.mp3,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00199,B0011,The Organ Grinder Sings (Op. 39 No. 23),Tchaikovsky,57,5級,,浪漫,小品,"pedalling, phrasing",,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00200,B0011,In Church (Op. 39 No. 24),Tchaikovsky,58,5級,,浪漫,小品,cantabile melody,https://example.com/demo/P00200.mp3,,"Tchaikovsky: Album for the Young, Op. 39",B-1-06
+P00201,B0012,"Minuet in G major, K. 1",Mozart,2,2級,,古典,舞曲,"phrasing, left-hand leaps",,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00202,B0012,"Minuet in F major, K. 2",Mozart,5,2級,,古典,舞曲,"left-hand leaps, waltz accompaniment",,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00203,B0012,"Allegro in B-flat major, K. 3",Mozart,7,2級,,古典,小品,cantabile melody,https://example.com/demo/P00203.mp3,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00204,B0012,"Minuet in F major, K. 5",Mozart,8,2級,,古典,舞曲,left-hand leaps,,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00205,B0012,"Twelve Variations on 'Ah vous dirai-je, Maman', K. 265",Mozart,9,5級,,古典,變奏曲,ornaments,,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00206,B0012,"Sonata in C major, K. 545",Mozart,10,5級,,古典,奏鳴曲,"Alberti bass, scales",,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00207,B0012,"Fantasia in D minor, K. 397",Mozart,13,6級,,古典,小品,legato,,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00208,B0012,"Sonata in A major, K. 331",Mozart,15,7級,,古典,奏鳴曲,"ornaments, octaves",,,Mozart: Easy Pieces and Sonatas,B-2-01
+P00209,B0013,"Ecossaise in G major, WoO 23",Beethoven,3,3級,,古典,舞曲,"dotted rhythm, left-hand leaps",,,Beethoven: Selected Piano Works,B-2-02
+P00210,B0013,"Six Variations on 'Nel cor più non mi sento', WoO 70",Beethoven,5,4級,,古典,變奏曲,"ornaments, scales",,,Beethoven: Selected Piano Works,B-2-02
+P00211,B0013,"Für Elise, WoO 59",Beethoven,7,4級,,古典,小品,"broken chords, pedalling",,,Beethoven: Selected Piano Works,B-2-02
+P00212,B0013,"Sonata in G major, Op. 49 No. 2",Beethoven,8,4級,,古典,奏鳴曲,"dynamic contrast, articulation",,,Beethoven: Selected Piano Works,B-2-02
+P00213,B0013,"Sonata in G minor, Op. 49 No. 1",Beethoven,9,5級,,古典,奏鳴曲,"scales, articulation",,,Beethoven: Selected Piano Works,B-2-02
+P00214,B0013,"Sonata in C-sharp minor 'Moonlight', Op. 27 No. 2",Beethoven,13,7級,,古典,奏鳴曲,"pedalling, voicing",,,Beethoven: Selected Piano Works,B-2-02
+P00215,B0013,"Sonata in C minor 'Pathétique', Op. 13",Beethoven,16,7級,,古典,奏鳴曲,dynamic contrast,,,Beethoven: Selected Piano Works,B-2-02
+P00216,B0014,"Waltz in A minor, B. 150",Chopin,2,4級,,浪漫,舞曲,"left-hand leaps, phrasing",,,Chopin: Waltzes,B-2-03
+P00217,B0014,"Waltz in E minor, B. 56",Chopin,3,6級,,浪漫,舞曲,"dotted rhythm, left-hand leaps",https://example.com/demo/P00217.mp3,,Chopin: Waltzes,B-2-03
+P00218,B0014,"Waltz in B minor, Op. 69 No. 2",Chopin,5,5級,,浪漫,舞曲,"rubato, waltz accompaniment",,,Chopin: Waltzes,B-2-03
+P00219,B0014,"Waltz in A-flat major 'L'adieu', Op. 69 No. 1",Chopin,9,6級,,浪漫,舞曲,"waltz accompaniment, dotted rhythm",,,Chopin: Waltzes,B-2-03
+P00220,B0014,"Waltz in C-sharp minor, Op. 64 No. 2",Chopin,12,6級,,浪漫,舞曲,left-hand leaps,,,Chopin: Waltzes,B-2-03
+P00221,B0014,"Waltz in D-flat major 'Minute', Op. 64 No. 1",Chopin,15,7級,,浪漫,舞曲,staccato,,,Chopin: Waltzes,B-2-03
+P00222,B0014,"Waltz in G-flat major, Op. 70 No. 1",Chopin,16,7級,,浪漫,舞曲,phrasing,,,Chopin: Waltzes,B-2-03
+P00223,B0015,"Nocturne in C-sharp minor, B. 49",Chopin,2,6級,,浪漫,小品,"cantabile melody, voicing",,,Chopin: Nocturnes,B-2-04
+P00224,B0015,"Nocturne in E minor, Op. 72 No. 1",Chopin,6,6級,,浪漫,小品,rubato,,,Chopin: Nocturnes,B-2-04
+P00225,B0015,"Nocturne in E-flat major, Op. 9 No. 2",Chopin,10,6級,,浪漫,小品,"cantabile melody, ornaments, rubato",https://example.com/demo/P00225.mp3,,Chopin: Nocturnes,B-2-04
+P00226,B0015,"Nocturne in B-flat minor, Op. 9 No. 1",Chopin,11,7級,,浪漫,小品,pedalling,,,Chopin: Nocturnes,B-2-04
+P00227,B0015,"Nocturne in B major, Op. 9 No. 3",Chopin,12,7級,,浪漫,小品,"cantabile melody, rubato",,,Chopin: Nocturnes,B-2-04
+P00228,B0015,"Nocturne in C-sharp minor, Op. 27 No. 1",Chopin,13,8級,,浪漫,小品,rubato,,,Chopin: Nocturnes,B-2-04
+P00229,B0015,"Nocturne in D-flat major, Op. 27 No. 2",Chopin,14,8級,,浪漫,小品,"rubato, legato",,,Chopin: Nocturnes,B-2-04
+P00230,B0015,"Nocturne in C minor, Op. 48 No. 1",Chopin,15,8級,,浪漫,小品,cantabile melody,https://example.com/demo/P00230.mp3,,Chopin: Nocturnes,B-2-04
+P00231,B0016,"Prelude in A major, Op. 28 No. 7",Chopin,2,3級,,浪漫,小品,"voicing, pedalling",,,"Chopin: Preludes, Op. 28 (selection)",B-2-05
+P00232,B0016,"Prelude in E minor, Op. 28 No. 4",Chopin,5,4級,,浪漫,小品,"left-hand chords, voicing",,,"Chopin: Preludes, Op. 28 (selection)",B-2-05
+P00233,B0016,"Prelude in B minor, Op. 28 No. 6",Chopin,8,4級,,浪漫,小品,left-hand melody,,,"Chopin: Preludes, Op. 28 (selection)",B-2-05
+P00234,B0016,"Prelude in C minor, Op. 28 No. 20",Chopin,10,4級,,浪漫,小品,"chords, dynamic control",,,"Chopin: Preludes, Op. 28 (selection)",B-2-05
+P00235,B0016,"Prelude in D-flat major 'Raindrop', Op. 28 No. 15",Chopin,11,6級,,浪漫,小品,"repeated notes, pedalling",,,"Chopin: Preludes, Op. 28 (selection)",B-2-05
+P00236,B0017,"Sweet Remembrance, Op. 19 No. 1",Mendelssohn,3,5級,,浪漫,小品,"voicing, dynamic control",,,Mendelssohn: Songs without Words (selection),B-2-06
+P00237,B0017,"Venetian Boat Song No. 1, Op. 19 No. 6",Mendelssohn,5,5級,,浪漫,小品,"pedalling, chords",https://example.com/demo/P00237.mp3,,Mendelssohn: Songs without Words (selection),B-2-06
+P00238,B0017,"Venetian Boat Song No. 2, Op. 30 No. 6",Mendelssohn,9,6級,,浪漫,小品,chords,,,Mendelssohn: Songs without Words (selection),B-2-06
+P00239,B0017,"Spring Song, Op. 62 No. 6",Mendelssohn,14,6級,,浪漫,小品,"dynamic control, cantabile melody",,,Mendelssohn: Songs without Words (selection),B-2-06
+P00240,B0017,"Spinning Song, Op. 67 No. 4",Mendelssohn,19,7級,,浪漫,小品,"fast repeated notes, staccato",https://example.com/demo/P00240.mp3,,Mendelssohn: Songs without Words (selection),B-2-06
+P00241,B0018,"Moment Musical in F minor, D. 780 No. 3",Schubert,3,4級,,浪漫,小品,phrasing,,,Schubert: Impromptus and Moments Musicaux,B-3-01
+P00242,B0018,"Impromptu in A-flat major, Op. 90 No. 4",Schubert,6,6級,,浪漫,小品,legato,,,Schubert: Impromptus and Moments Musicaux,B-3-01
+P00243,B0018,"Impromptu in C minor, Op. 90 No. 1",Schubert,7,6級,,浪漫,小品,dynamic control,,,Schubert: Impromptus and Moments Musicaux,B-3-01
+P00244,B0018,"Impromptu in G-flat major, Op. 90 No. 3",Schubert,9,7級,,浪漫,小品,"pedalling, chords",,,Schubert: Impromptus and Moments Musicaux,B-3-01
+P00245,B0018,"Impromptu in E-flat major, Op. 90 No. 2",Schubert,11,7級,,浪漫,小品,"pedalling, cantabile melody",https://example.com/demo/P00245.mp3,,Schubert: Impromptus and Moments Musicaux,B-3-01
+P00246,B0019,Arietta (Op. 12 No. 1),Grieg,4,,,浪漫,小品,phrasing,,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00247,B0019,Waltz (Op. 12 No. 2),Grieg,5,,,浪漫,小品,"legato, pedalling",,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00248,B0019,Watchman's Song (Op. 12 No. 3),Grieg,8,,,浪漫,小品,chords,,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00249,B0019,Elves' Dance (Op. 12 No. 4),Grieg,9,,,浪漫,小品,dynamic control,,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00250,B0019,Folk Melody (Op. 12 No. 5),Grieg,10,,,浪漫,小品,"legato, rubato",,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00251,B0019,Norwegian Melody (Op. 12 No. 6),Grieg,13,,,浪漫,小品,"legato, rubato",,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00252,B0019,Album Leaf (Op. 12 No. 7),Grieg,15,,,浪漫,小品,"legato, phrasing",,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00253,B0019,National Song (Op. 12 No. 8),Grieg,16,,,浪漫,小品,cantabile melody,,,"Grieg: Lyric Pieces, Op. 12",B-3-02
+P00254,B0020,The Little Shepherd,Debussy,4,4級,,近代,小品,"rubato, phrasing",,,Debussy: Children's Corner,B-3-03
+P00255,B0020,Jimbo's Lullaby,Debussy,7,5級,,近代,小品,pedalling,,,Debussy: Children's Corner,B-3-03
+P00256,B0020,Serenade for the Doll,Debussy,9,6級,,近代,小品,"phrasing, pedalling",,,Debussy: Children's Corner,B-3-03
+P00257,B0020,The Snow Is Dancing,Debussy,12,6級,,近代,小品,"legato, voicing",,,Debussy: Children's Corner,B-3-03
+P00258,B0020,Golliwogg's Cakewalk,Debussy,16,6級,,近代,小品,"syncopation, staccato",,,Debussy: Children's Corner,B-3-03
+P00259,B0020,Doctor Gradus ad Parnassum,Debussy,21,7級,,近代,小品,"fast passages, evenness",,,Debussy: Children's Corner,B-3-03
+P00260,B0021,Rêverie,Debussy,3,5級,,近代,小品,"voicing, phrasing",,,Debussy: Selected Piano Works,
+P00261,B0021,"The Girl with the Flaxen Hair (Préludes, Book I)",Debussy,5,5級,,近代,小品,"phrasing, dynamic control",,,Debussy: Selected Piano Works,
+P00262,B0021,Arabesque No. 1,Debussy,6,6級,,近代,小品,triplets against duplets,,,Debussy: Selected Piano Works,
+P00263,B0021,Arabesque No. 2,Debussy,7,6級,,近代,小品,"legato, phrasing",,,Debussy: Selected Piano Works,
+P00264,B0021,Clair de lune (Suite bergamasque),Debussy,12,7級,,近代,小品,"pedalling, voicing",,,Debussy: Selected Piano Works,
+P00265,B0022,Gymnopédie No. 1,Satie,4,3級,,近代,小品,"dynamic control, phrasing",,,Satie: Gymnopédies and Gnossiennes,
+P00266,B0022,Gymnopédie No. 2,Satie,5,3級,,近代,小品,phrasing,,,Satie: Gymnopédies and Gnossiennes,
+P00267,B0022,Gymnopédie No. 3,Satie,7,3級,,近代,小品,"rubato, legato",,,Satie: Gymnopédies and Gnossiennes,
+P00268,B0022,Gnossienne No. 1,Satie,9,4級,,近代,小品,pedalling,,,Satie: Gymnopédies and Gnossiennes,
+P00269,B0022,Gnossienne No. 2,Satie,11,4級,,近代,小品,"phrasing, rubato",,,Satie: Gymnopédies and Gnossiennes,
+P00270,B0022,Gnossienne No. 3,Satie,13,4級,,近代,小品,"rubato, voicing",https://example.com/demo/P00270.mp3,,Satie: Gymnopédies and Gnossiennes,
+P00271,B0023,Melodious Exercise No. 1 (Op. 149),Diabelli,2,1級,,古典,四手聯彈,ensemble timing,,,"Diabelli: Melodious Exercises, Op. 149 (four hands)",C-1-01
+P00272,B0023,Melodious Exercise No. 2 (Op. 149),Diabelli,4,1級,,古典,四手聯彈,"balance between parts, ensemble timing",,,"Diabelli: Melodious Exercises, Op. 149 (four hands)",C-1-01
+P00273,B0023,Melodious Exercise No. 3 (Op. 149),Diabelli,6,1級,,古典,四手聯彈,"ensemble timing, balance between parts",,,"Diabelli: Melodious Exercises, Op. 149 (four hands)",C-1-01
+P00274,B0023,Melodious Exercise No. 4 (Op. 149),Diabelli,8,2級,,古典,四手聯彈,counting,,,"Diabelli: Melodious Exercises, Op. 149 (four hands)",C-1-01
+P00275,B0023,Melodious Exercise No. 5 (Op. 149),Diabelli,9,2級,,古典,四手聯彈,ensemble timing,,,"Diabelli: Melodious Exercises, Op. 149 (four hands)",C-1-01
+P00276,B0023,Melodious Exercise No. 6 (Op. 149),Diabelli,12,2級,,古典,四手聯彈,"counting, ensemble timing",https://example.com/demo/P00276.mp3,,"Diabelli: Melodious Exercises, Op. 149 (four hands)",C-1-01
+P00277,B0024,Hungarian Dance No. 1 in G minor,Brahms,3,6級,,浪漫,四手聯彈,counting,,,Brahms: Hungarian Dances (four hands),C-1-02
+P00278,B0024,Hungarian Dance No. 5 in F-sharp minor,Brahms,4,6級,,浪漫,四手聯彈,"ensemble timing, balance between parts",https://example.com/demo/P00278.mp3,,Brahms: Hungarian Dances (four hands),C-1-02
+P00279,B0025,"Für Elise, WoO 59",Beethoven,5,4級,,古典,小品,"broken chords, pedalling",,,Für Elise (single sheet),C-1-03
+P00280,B0026,Clair de lune (Suite bergamasque),Debussy,5,7級,,近代,小品,"pedalling, voicing",,,Clair de lune (single sheet),C-1-04
+P00281,B0027,Maple Leaf Rag,Joplin,5,6級,,近代,舞曲,"syncopation, left-hand leaps",,,Maple Leaf Rag (single sheet),C-1-05
+P00282,B0028,The Entertainer,Joplin,2,5級,,近代,舞曲,"syncopation, left-hand leaps",,,The Entertainer (single sheet),C-1-06
+P00283,B0029,"Minuet in G major, BWV Anh. 114",Petzold,2,2級,,巴洛克,舞曲,"phrasing, left-hand leaps",,,檢定曲集 1–2 級,C-2-01
+P00284,B0029,"Musette in D major, BWV Anh. 126",J.S. Bach,5,2級,,巴洛克,舞曲,"phrasing, rubato",,,檢定曲集 1–2 級,C-2-01
+P00285,B0029,"Minuet in F major, K. 2",Mozart,7,2級,,古典,舞曲,"left-hand leaps, waltz accompaniment",https://example.com/demo/P00285.mp3,,檢定曲集 1–2 級,C-2-01
+P00286,B0029,Melodious Exercise No. 1 (Op. 149),Diabelli,8,1級,,古典,四手聯彈,ensemble timing,https://example.com/demo/P00286.mp3,,檢定曲集 1–2 級,C-2-01
+P00287,B0029,Melody (Op. 68 No. 1),Schumann,9,2級,,浪漫,小品,pedalling,,,檢定曲集 1–2 級,C-2-01
+P00288,B0029,La Candeur (Op. 100 No. 1),Burgmüller,11,2級,,浪漫,練習曲,legato melody,,,檢定曲集 1–2 級,C-2-01
+P00289,B0029,Ode to Joy (arr.),Beethoven,13,1級,,,小品,"legato, hand position",,,檢定曲集 1–2 級,C-2-01
+P00290,B0030,"Little Prelude in C major, BWV 939",J.S. Bach,4,3級,,巴洛克,小品,voicing,,,檢定曲集 3–4 級,C-2-02
+P00291,B0030,"Sonatina in C major, Op. 36 No. 1",Clementi,5,3級,,古典,奏鳴曲,"phrasing, scales",,,檢定曲集 3–4 級,C-2-02
+P00292,B0030,"Für Elise, WoO 59",Beethoven,8,4級,,古典,小品,"broken chords, pedalling",https://example.com/demo/P00292.mp3,,檢定曲集 3–4 級,C-2-02
+P00293,B0030,The Happy Farmer (Op. 68 No. 10),Schumann,11,3級,,浪漫,小品,dynamic control,,,檢定曲集 3–4 級,C-2-02
+P00294,B0030,Arabesque (Op. 100 No. 2),Burgmüller,14,3級,,浪漫,練習曲,"staccato, fast passages",,,檢定曲集 3–4 級,C-2-02
+P00295,B0030,The Sick Doll (Op. 39 No. 6),Tchaikovsky,16,3級,,浪漫,小品,dynamic control,,,檢定曲集 3–4 級,C-2-02
+P00296,B0030,Gymnopédie No. 1,Satie,19,3級,,近代,小品,"dynamic control, phrasing",,,檢定曲集 3–4 級,C-2-02
+P00297,B0030,"Prelude in E minor, Op. 28 No. 4",Chopin,22,4級,,浪漫,小品,"left-hand chords, voicing",,,檢定曲集 3–4 級,C-2-02
+P00298,B0031,"Invention No. 1 in C major, BWV 772",J.S. Bach,4,5級,,巴洛克,練習曲,"two-voice counterpoint, hand independence",,,檢定曲集 5–6 級,C-2-03
+P00299,B0031,"Sonata in C major, K. 545",Mozart,7,5級,,古典,奏鳴曲,"Alberti bass, scales",,,檢定曲集 5–6 級,C-2-03
+P00300,B0031,"Waltz in B minor, Op. 69 No. 2",Chopin,10,5級,,浪漫,舞曲,"rubato, waltz accompaniment",,,檢定曲集 5–6 級,C-2-03
+P00301,B0031,"Spring Song, Op. 62 No. 6",Mendelssohn,14,6級,,浪漫,小品,"dynamic control, cantabile melody",,,檢定曲集 5–6 級,C-2-03
+P00302,B0031,"Nocturne in E-flat major, Op. 9 No. 2",Chopin,19,6級,,浪漫,小品,"cantabile melody, ornaments, rubato",,,檢定曲集 5–6 級,C-2-03
+P00303,B0031,Arabesque No. 1,Debussy,22,6級,,近代,小品,triplets against duplets,,,檢定曲集 5–6 級,C-2-03
+P00304,B0031,"Impromptu in A-flat major, Op. 90 No. 4",Schubert,27,6級,,浪漫,小品,legato,,,檢定曲集 5–6 級,C-2-03
+P00305,B0031,The Entertainer,Joplin,29,5級,,近代,舞曲,"syncopation, left-hand leaps",,,檢定曲集 5–6 級,C-2-03
