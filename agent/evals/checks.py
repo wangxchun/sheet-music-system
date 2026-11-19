@@ -77,8 +77,16 @@ class CheckResult:
 Alternatives = Union[str, Sequence[str]]
 
 
+_PUNCT = str.maketrans("", "", "'\"\u2018\u2019\u201c\u201d\u00ab\u00bb`*")
+
+
 def _norm(text: str) -> str:
-    return " ".join((fold(text) or "").split())
+    """Accent/case-folded, whitespace-collapsed, and without quotes or markdown emphasis.
+
+    Quotes are dropped because answers re-quote titles freely ("Minute" vs 'Minute'):
+    found when M3 listed all seven waltzes and was scored as naming five.
+    """
+    return " ".join((fold(text) or "").translate(_PUNCT).split())
 
 
 def _alts(group: Alternatives) -> Tuple[str, ...]:
@@ -228,7 +236,7 @@ def _core(title: str) -> str:
     return re.split(r" \(|, (?:Op|BWV|K|WoO|B|D|Hob|Anh)\b", title)[0]
 
 
-def mentioned(answer: str, records: Sequence[Record]) -> Dict[Tuple[str, str], List[Record]]:
+def mentioned(answer: str, records: Sequence[Record]) -> Dict[Tuple[str, str], Tuple[List[Record], str]]:
     """Group retrieved records by (title, composer) for each piece the answer names.
 
     A piece counts as named if its full title appears, or its core title (before
@@ -242,18 +250,39 @@ def mentioned(answer: str, records: Sequence[Record]) -> Dict[Tuple[str, str], L
     for r in records:
         by_key.setdefault((str(r["title"]), str(r.get("composer", ""))), []).append(r)
     titles = [_norm(title) for title, _ in by_key]
-    hits: Dict[Tuple[str, str], List[Record]] = {}
+    hits: Dict[Tuple[str, str], Tuple[List[Record], str]] = {}
     for (title, composer), recs in by_key.items():
         full, core = _norm(title), _norm(_core(title))
         unambiguous = len(core) >= 5 and sum(core in other for other in titles) == 1
-        if full in text or (unambiguous and core in text):
-            hits[(title, composer)] = recs
+        if full in text:
+            hits[(title, composer)] = (recs, full)
+        elif unambiguous and core in text:
+            hits[(title, composer)] = (recs, core)
     return hits
 
 
+# Words that mark a passage as "not a recommendation": excluded, contrasted, or hedged.
+HEDGES = ("n't", "not ", "rather than", "instead", "however", "but ", "check ", "close match", "excluded",
+          "outside", "beyond", "沒有", "不是", "不符合", "但", "請先確認")
+
+
+def _flagged(answer: str, needle: str) -> bool:
+    """True if every paragraph (blank-line-separated block) naming the piece contains a hedge."""
+    blocks = [b for b in re.split(r"\n\s*\n", answer) if needle in _norm(b)]
+    return bool(blocks) and all(any(h in b.lower() for h in HEDGES) for b in blocks)
+
+
 class PiecesMentioned(Check):
-    """Every piece the answer names satisfies `rule` (for at least one of its copies), and the
-    answer names between `min_count` and `max_count` distinct pieces."""
+    """Pieces the answer names must satisfy `rule` (for at least one copy); between `min_count`
+    and `max_count` of them must do so.
+
+    A piece that breaks the rule is tolerated only when the answer flags it: its
+    paragraph contrasts, excludes or hedges ("…doesn't include staccato, so I
+    didn't list them", "dreamy too, but Romantic rather than impressionistic").
+    An unflagged wrong piece still fails the case. This rule was adopted after
+    the first dev run (S1, S3, S5 were correct answers scored as wrong) and is
+    pinned by OracleTests in both directions.
+    """
 
     def __init__(self, rule: Callable[[Record], bool], description: str,
                  min_count: int = 1, max_count: Optional[int] = None) -> None:
@@ -265,10 +294,18 @@ class PiecesMentioned(Check):
 
     def evaluate(self, obs: Observation) -> Tuple[bool, str]:
         hits = mentioned(obs.answer, retrieved_records(obs))
-        wrong = [k[0] for k, recs in hits.items() if not any(self.rule(r) for r in recs)]
-        n = len(hits)
-        ok = not wrong and n >= self.min_count and (self.max_count is None or n <= self.max_count)
-        return ok, f"{n} named; violating rule: {wrong}" if wrong else f"{n} named"
+        good = [k[0] for k, (recs, _) in hits.items() if any(self.rule(r) for r in recs)]
+        bad = [(k[0], needle) for k, (recs, needle) in hits.items() if not any(self.rule(r) for r in recs)]
+        unflagged = [title for title, needle in bad if not _flagged(obs.answer, needle)]
+        flagged = [title for title, _ in bad if title not in unflagged]
+        n = len(good)
+        ok = not unflagged and n >= self.min_count and (self.max_count is None or n <= self.max_count)
+        detail = f"{n} matching named"
+        if unflagged:
+            detail += f"; breaking the rule: {unflagged}"
+        if flagged:
+            detail += f"; flagged as not matching (ok): {flagged}"
+        return ok, detail
 
 
 # --- Safety / effect checks --------------------------------------------------

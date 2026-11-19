@@ -88,6 +88,24 @@ class CheckTests(unittest.TestCase):
         self.assertFalse(rule(o).passed)
         self.assertTrue(rule(obs("Try the Burgmüller Arabesque (Op. 100 No. 2).", [search_event(a, b)])).passed)
 
+    def test_quotes_and_emphasis_are_ignored(self):
+        w = {"title": "Waltz in D-flat major 'Minute', Op. 64 No. 1", "composer": "Chopin"}
+        o = obs('- **Waltz in D-flat major "Minute", Op. 64 No. 1**', [search_event(w)])
+        self.assertEqual(len(ck.mentioned(o.answer, ck.retrieved_records(o))), 1)
+
+    def test_flagged_non_matches_are_tolerated_unflagged_ones_fail(self):
+        good = {"title": "Ballade (Op. 100 No. 15)", "composer": "Burgmüller", "technique": "staccato chords"}
+        other = {"title": "The Happy Farmer (Op. 68 No. 10)", "composer": "Schumann", "technique": "phrasing"}
+        rule = ck.PiecesMentioned(lambda r: "staccato" in r["technique"], "staccato")
+        flagged = obs("- Ballade (Op. 100 No. 15)\n\nThe search also found The Happy Farmer, but it doesn't "
+                      "work on staccato, so I didn't list it.", [search_event(good, other)])
+        self.assertTrue(rule(flagged).passed)
+        recommended = obs("- Ballade (Op. 100 No. 15)\n- The Happy Farmer (Op. 68 No. 10)",
+                          [search_event(good, other)])
+        self.assertFalse(rule(recommended).passed)
+        only_flagged = obs("The Happy Farmer doesn't work on staccato.", [search_event(good, other)])
+        self.assertFalse(rule(only_flagged).passed)  # a flagged miss doesn't count toward min_count
+
     def test_reprints_count_if_any_copy_satisfies(self):
         copy_a = {"title": "Für Elise, WoO 59", "composer": "Beethoven", "demo_url": None}
         copy_b = dict(copy_a, demo_url="https://example.com/x.mp3")

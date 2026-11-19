@@ -210,8 +210,9 @@ def build_cases(db_path: Path = db.DEFAULT_DB) -> List[Case]:
              [Mentions(*[r["location"] for r in demo_copy])]),
         Case("M3", "multi_turn", "dev", ["What Chopin do we have?", "Only the waltzes, please."],
              [PiecesMentioned(lambda r: r.get("composer") == "Chopin" and "Waltz" in str(r.get("title")),
-                              "Chopin waltzes", min_count=f.scalar(
-                                  "SELECT COUNT(*) FROM pieces WHERE composer = 'Chopin' AND title LIKE 'Waltz%'"))]),
+                              "Chopin waltzes", min_count=f.scalar(  # distinct pieces, not copies
+                                  "SELECT COUNT(DISTINCT title) FROM pieces WHERE composer = 'Chopin' "
+                                  "AND title LIKE 'Waltz%'"))]),
         Case("M4", "multi_turn", "test", ["Do we have anything by Debussy?", "Which one is the easiest?"],
              [Mentions(easiest_debussy)]),
         Case("M5", "multi_turn", "dev", ["Show me Bach pieces at level 3 or below.", "How many is that in total?"],

@@ -6,6 +6,10 @@ Usage:
     python -m agent.evals.run --split dev --case L1 M2 --yes
     python -m agent.evals.run --split test --final --yes  # the held-out number; logged in TEST_LOG.md
     ... --langsmith                                       # also record it as a LangSmith experiment
+    python -m agent.evals.run --rescore REPORT.json       # re-score saved answers with the current checks
+
+--rescore separates evaluator changes from agent changes: the same saved
+answers are scored again, with no API calls and no cost.
 
 DESIGN DECISIONS
 - Dry run by default. Every real run costs money (CLAUDE.md: check before
@@ -32,6 +36,7 @@ from typing import Any, Dict, List, Optional, Sequence
 
 from agent import db, index, runtime
 from agent.evals.cases import Case, build_cases, by_split
+from agent.evals.checks import NoWrites, Observation, RanWithoutError, ToolEvent, Turn
 from agent.evals.harness import CaseResult, Harness
 from agent.graph import EFFORT, MODEL, default_model
 from agent.prompts import PROMPT_VERSION
@@ -160,6 +165,29 @@ async def run_langsmith(cases: Sequence[Case], harness: Harness, split: str, con
     return [results[c.id] for c in cases if c.id in results]
 
 
+def rescore(report_path: Path) -> int:
+    data = json.loads(report_path.read_text(encoding="utf-8"))
+    cases = {c.id: c for c in build_cases()}
+    results: List[CaseResult] = []
+    for old in data["results"]:
+        o = old["observation"]
+        obs = Observation(
+            turns=[Turn(t["user"], t["answer"], [ToolEvent(**e) for e in t["tools"]]) for t in o["turns"]],
+            proposals=o["proposals"], new_books=o["new_books"], new_pieces=o["new_pieces"],
+            changed_rows=o["changed_rows"], error=o["error"])
+        case = cases[old["case_id"]]
+        checks = [RanWithoutError(), *case.checks] + ([] if case.expects_write else [NoWrites()])
+        scored = [c(obs) for c in checks]
+        results.append(CaseResult(case.id, case.category, case.split, all(r.passed for r in scored), scored, obs,
+                                  old["seconds"], old["model_calls"], old["input_tokens"], old["output_tokens"],
+                                  old["approvals_used"]))
+        if old["passed"] != results[-1].passed:
+            print(f"  {case.id}: {'fail -> pass' if results[-1].passed else 'pass -> fail'}")
+    print(f"re-scored {report_path.name} (originally {data['summary']['passed']}/{data['summary']['cases']})")
+    print_report(summarise(results), results)
+    return 0
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Run the catalogue agent eval.")
     parser.add_argument("--split", choices=["dev", "test", "all"], default="dev")
@@ -168,7 +196,10 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--final", action="store_true", help="required to run the held-out test split")
     parser.add_argument("--langsmith", action="store_true", help="record the run as a LangSmith experiment")
     parser.add_argument("--concurrency", type=int, default=4)
+    parser.add_argument("--rescore", type=Path, help="re-score a saved report with the current checks (free)")
     args = parser.parse_args(argv)
+    if args.rescore:
+        return rescore(args.rescore)
 
     cases = by_split(build_cases(), args.split)
     if args.case:
